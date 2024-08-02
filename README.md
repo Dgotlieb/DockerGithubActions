@@ -19,6 +19,25 @@
 
 8. Go to your forked Github repository (Section 1) --> Settings --> secrets and variables --> Actions --> New repository secret
 9. Create **2** new secrets under the names: `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` (you know what to store there 😉)
+10. You can now go to Actions and run you workflow (you can pass a tag)
+11. If everything worked as expected you should see your ne image and run it on your local system 🎉
+<img width="679" alt="image" src="https://github.com/user-attachments/assets/dfffd43c-c7c0-4032-92ea-2c24ffb6b26e">
+
+``` bash
+docker run dgotlieb/my_image:latest
+Unable to find image 'dgotlieb/my_image:latest' locally
+latest: Pulling from dgotlieb/my_image
+c6a83fedfae6: Already exists
+2733810d7af8: Already exists
+c96a0e292e9e: Already exists
+47007a96afca: Already exists
+9f803fcc73d2: Already exists
+76b88a2e40fa: Pull complete
+Digest: sha256:da34a8e832d937ce9ceaf80dbeb977e85e46737241f358263c0551351dd31f5f
+Status: Downloaded newer image for dgotlieb/my_image:latest
+2024-08-02 16:42:03.605517
+```
+
 
 
 
