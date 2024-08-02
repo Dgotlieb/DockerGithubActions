@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my_image:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my_image:${{ github.event.inputs.tag }}
